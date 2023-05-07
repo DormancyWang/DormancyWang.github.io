@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>about_emacs | wang的博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="屏幕 Screen frame menu bar echo area the window: the main area of the frame buffer mode line  User Input用户输入的类型 keyboard input into Emacs is base on a heavily-extended version of ASCII. singlar control">
+<meta property="og:type" content="article">
+<meta property="og:title" content="about_emacs">
+<meta property="og:url" content="https://dormancywang.github.io/2023/05/07/about-emacs/index.html">
+<meta property="og:site_name" content="wang的博客">
+<meta property="og:description" content="屏幕 Screen frame menu bar echo area the window: the main area of the frame buffer mode line  User Input用户输入的类型 keyboard input into Emacs is base on a heavily-extended version of ASCII. singlar control">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-05-06T16:12:20.000Z">
+<meta property="article:modified_time" content="2023-05-07T04:08:49.578Z">
+<meta property="article:author" content="wang">
+<meta property="article:tag" content="editors">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="wang的博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">wang的博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://dormancywang.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-about-emacs" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/07/about-emacs/" class="article-date">
+  <time class="dt-published" datetime="2023-05-06T16:12:20.000Z" itemprop="datePublished">2023-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      about_emacs
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="屏幕-Screen"><a href="#屏幕-Screen" class="headerlink" title="屏幕 Screen"></a>屏幕 Screen</h2><ol>
+<li>frame</li>
+<li>menu bar</li>
+<li>echo area</li>
+<li>the window: the main area of the frame</li>
+<li>buffer</li>
+<li>mode line</li>
+</ol>
+<h2 id="User-Input用户输入的类型"><a href="#User-Input用户输入的类型" class="headerlink" title="User Input用户输入的类型"></a>User Input用户输入的类型</h2><ol>
+<li>keyboard input into Emacs is base on a heavily-extended version of ASCII.</li>
+<li>singlar control key <code>&lt;RET&gt;</code> … and control charaters that are entered using “modifier keys”</li>
+<li>input event</li>
+</ol>
+<h2 id="Key"><a href="#Key" class="headerlink" title="Key"></a>Key</h2><ol>
+<li>key sequence</li>
+<li>complete key , prefix key</li>
+<li>C-h or <code>&lt;F1&gt;</code> after a prefix key displays a list of the commands starting w  ith that prefix.</li>
+</ol>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><ol>
+<li>key is binding to command</li>
+<li>keymap table</li>
+</ol>
+<h2 id="Exiting-Emacs"><a href="#Exiting-Emacs" class="headerlink" title="Exiting Emacs"></a>Exiting Emacs</h2><ol>
+<li><code>C-x C-c</code> kill Emacs</li>
+<li>kk</li>
+</ol>
+<h1 id="Fundamental-Editing-Commands"><a href="#Fundamental-Editing-Commands" class="headerlink" title="Fundamental Editing Commands"></a>Fundamental Editing Commands</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Inserting-Text"><a href="#Inserting-Text" class="headerlink" title="Inserting Text"></a>Inserting Text</h3><ol>
+<li>To insert a non-graphic cahracter, first quote it by typing <code>C-q</code></li>
+<li><code>C-x 8</code> can insert some common Unicode characters</li>
+<li>transient input method: 用来使用拼音的，emacs自带的拼音，难用。忽略就好</li>
+</ol>
+<h3 id="Moving-point"><a href="#Moving-point" class="headerlink" title="Moving point"></a>Moving point</h3><ol>
+<li>M-r moving cursor</li>
+<li>M-&lt; moving to the top</li>
+<li>M-&gt; moving to the bottom</li>
+<li>goto-line, goto-line-relative</li>
+<li>goal column: 光标上下移动的时候总是在这一列上 C-x C-n, C-u C-x C-n to cancel</li>
+</ol>
+<h3 id="Erasing-Text"><a href="#Erasing-Text" class="headerlink" title="Erasing Text"></a>Erasing Text</h3><h3 id="Undoing-Changes"><a href="#Undoing-Changes" class="headerlink" title="Undoing Changes"></a>Undoing Changes</h3><ol>
+<li>C-&#x2F;, C-x u, C-_</li>
+</ol>
+<h3 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h3><h3 id="Help"><a href="#Help" class="headerlink" title="Help"></a>Help</h3><ol>
+<li>C-h k</li>
+<li>C-h 就是用来寻求帮助的，可以看提示</li>
+</ol>
+<h3 id="Continuation-lines"><a href="#Continuation-lines" class="headerlink" title="Continuation lines"></a>Continuation lines</h3><ol>
+<li>line wrapping</li>
+<li>Visual Line mode</li>
+</ol>
+<h3 id="Cursor-Position-INformatino"><a href="#Cursor-Position-INformatino" class="headerlink" title="Cursor Position INformatino"></a>Cursor Position INformatino</h3><ol>
+<li>Mx what-line, line-number-mode, column-number-mode,</li>
+</ol>
+<h3 id="Numeric-Arguments"><a href="#Numeric-Arguments" class="headerlink" title="Numeric Arguments"></a>Numeric Arguments</h3><ol>
+<li>M-()</li>
+<li>C-u (universal-argument)</li>
+</ol>
+<h3 id="Repeating-a-command"><a href="#Repeating-a-command" class="headerlink" title="Repeating a command"></a>Repeating a command</h3><ol>
+<li>C-x z</li>
+<li>repeat-mode: key or timeout to trun off</li>
+</ol>
+<h2 id="Minibuffer"><a href="#Minibuffer" class="headerlink" title="Minibuffer"></a>Minibuffer</h2><h3 id="Minibuffer-History"><a href="#Minibuffer-History" class="headerlink" title="Minibuffer History"></a>Minibuffer History</h3><h2 id="M-x-invoking-command-by-their-names"><a href="#M-x-invoking-command-by-their-names" class="headerlink" title="M-x invoking command by their names"></a>M-x invoking command by their names</h2><ol>
+<li>M-X 只会列出属于当前主要mode的命令</li>
+<li>excute-extended-command</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="clhdc7uqb000115fy9tcdd97o" data-title="about_emacs" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editors/" rel="tag">editors</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2023/04/29/mongodb/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">mongodb</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/editors/" rel="tag">editors</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/editors/" style="font-size: 10px;">editors</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">五月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/05/07/about-emacs/">about_emacs</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/29/mongodb/">mongodb</a>
+          </li>
+        
+          <li>
+            <a href="/2023/04/29/about-c/">about-c</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 wang<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

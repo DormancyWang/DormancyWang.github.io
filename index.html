@@ -71,6 +71,110 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-about-emacs" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/07/about-emacs/" class="article-date">
+  <time class="dt-published" datetime="2023-05-06T16:12:20.000Z" itemprop="datePublished">2023-05-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/07/about-emacs/">about_emacs</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="屏幕-Screen"><a href="#屏幕-Screen" class="headerlink" title="屏幕 Screen"></a>屏幕 Screen</h2><ol>
+<li>frame</li>
+<li>menu bar</li>
+<li>echo area</li>
+<li>the window: the main area of the frame</li>
+<li>buffer</li>
+<li>mode line</li>
+</ol>
+<h2 id="User-Input用户输入的类型"><a href="#User-Input用户输入的类型" class="headerlink" title="User Input用户输入的类型"></a>User Input用户输入的类型</h2><ol>
+<li>keyboard input into Emacs is base on a heavily-extended version of ASCII.</li>
+<li>singlar control key <code>&lt;RET&gt;</code> … and control charaters that are entered using “modifier keys”</li>
+<li>input event</li>
+</ol>
+<h2 id="Key"><a href="#Key" class="headerlink" title="Key"></a>Key</h2><ol>
+<li>key sequence</li>
+<li>complete key , prefix key</li>
+<li>C-h or <code>&lt;F1&gt;</code> after a prefix key displays a list of the commands starting w  ith that prefix.</li>
+</ol>
+<h2 id="Commands"><a href="#Commands" class="headerlink" title="Commands"></a>Commands</h2><ol>
+<li>key is binding to command</li>
+<li>keymap table</li>
+</ol>
+<h2 id="Exiting-Emacs"><a href="#Exiting-Emacs" class="headerlink" title="Exiting Emacs"></a>Exiting Emacs</h2><ol>
+<li><code>C-x C-c</code> kill Emacs</li>
+<li>kk</li>
+</ol>
+<h1 id="Fundamental-Editing-Commands"><a href="#Fundamental-Editing-Commands" class="headerlink" title="Fundamental Editing Commands"></a>Fundamental Editing Commands</h1><h2 id="Basic"><a href="#Basic" class="headerlink" title="Basic"></a>Basic</h2><h3 id="Inserting-Text"><a href="#Inserting-Text" class="headerlink" title="Inserting Text"></a>Inserting Text</h3><ol>
+<li>To insert a non-graphic cahracter, first quote it by typing <code>C-q</code></li>
+<li><code>C-x 8</code> can insert some common Unicode characters</li>
+<li>transient input method: 用来使用拼音的，emacs自带的拼音，难用。忽略就好</li>
+</ol>
+<h3 id="Moving-point"><a href="#Moving-point" class="headerlink" title="Moving point"></a>Moving point</h3><ol>
+<li>M-r moving cursor</li>
+<li>M-&lt; moving to the top</li>
+<li>M-&gt; moving to the bottom</li>
+<li>goto-line, goto-line-relative</li>
+<li>goal column: 光标上下移动的时候总是在这一列上 C-x C-n, C-u C-x C-n to cancel</li>
+</ol>
+<h3 id="Erasing-Text"><a href="#Erasing-Text" class="headerlink" title="Erasing Text"></a>Erasing Text</h3><h3 id="Undoing-Changes"><a href="#Undoing-Changes" class="headerlink" title="Undoing Changes"></a>Undoing Changes</h3><ol>
+<li>C-&#x2F;, C-x u, C-_</li>
+</ol>
+<h3 id="Files"><a href="#Files" class="headerlink" title="Files"></a>Files</h3><h3 id="Help"><a href="#Help" class="headerlink" title="Help"></a>Help</h3><ol>
+<li>C-h k</li>
+<li>C-h 就是用来寻求帮助的，可以看提示</li>
+</ol>
+<h3 id="Continuation-lines"><a href="#Continuation-lines" class="headerlink" title="Continuation lines"></a>Continuation lines</h3><ol>
+<li>line wrapping</li>
+<li>Visual Line mode</li>
+</ol>
+<h3 id="Cursor-Position-INformatino"><a href="#Cursor-Position-INformatino" class="headerlink" title="Cursor Position INformatino"></a>Cursor Position INformatino</h3><ol>
+<li>Mx what-line, line-number-mode, column-number-mode,</li>
+</ol>
+<h3 id="Numeric-Arguments"><a href="#Numeric-Arguments" class="headerlink" title="Numeric Arguments"></a>Numeric Arguments</h3><ol>
+<li>M-()</li>
+<li>C-u (universal-argument)</li>
+</ol>
+<h3 id="Repeating-a-command"><a href="#Repeating-a-command" class="headerlink" title="Repeating a command"></a>Repeating a command</h3><ol>
+<li>C-x z</li>
+<li>repeat-mode: key or timeout to trun off</li>
+</ol>
+<h2 id="Minibuffer"><a href="#Minibuffer" class="headerlink" title="Minibuffer"></a>Minibuffer</h2><h3 id="Minibuffer-History"><a href="#Minibuffer-History" class="headerlink" title="Minibuffer History"></a>Minibuffer History</h3><h2 id="M-x-invoking-command-by-their-names"><a href="#M-x-invoking-command-by-their-names" class="headerlink" title="M-x invoking command by their names"></a>M-x invoking command by their names</h2><ol>
+<li>M-X 只会列出属于当前主要mode的命令</li>
+<li>excute-extended-command</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="clhdc7uqb000115fy9tcdd97o" data-title="about_emacs" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/editors/" rel="tag">editors</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-mongodb" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/04/29/mongodb/" class="article-date">
@@ -166,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="clh9udz7q000148fy6cmb95za" data-title="mongodb" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="clhdc7uqc000215fygaci8ucy" data-title="mongodb" class="article-share-link">分享</a>
       
       
       
@@ -228,11 +332,16 @@
 <p>EOF is defined in stdio.h<br>generally its -1 cause that doesn’t confilct with any ascii code(0-255).</p>
 <p>most Unix and Linux systems, pressing Ctrl+D at the beginning of a line cause the end-of-line signal to be transmitted.</p>
 <p>&lt;,&gt; |: first two is redirection, last is pipe. file to program, program to program.</p>
+<h2 id="Point"><a href="#Point" class="headerlink" title="Point"></a>Point</h2><ol>
+<li>the value of point is the address of the object to which it points.</li>
+<li>applying the * operator to a pointer yields the value stored in the pointed-to object.</li>
+<li>adding 1 to pointer increase its value by the size, in bytes, of the pointed-to type</li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="clh9udz7n000048fy5i1n4ktn" data-title="about-c" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="clhdc7uq9000015fyc9xmg7ee" data-title="about-c" class="article-share-link">分享</a>
       
       
       
@@ -257,7 +366,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/editors/" rel="tag">editors</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" rel="tag">数据库</a></li></ul>
     </div>
   </div>
 
@@ -267,7 +376,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
+      <a href="/tags/editors/" style="font-size: 10px;">editors</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 10px;">数据库</a>
     </div>
   </div>
 
@@ -276,7 +385,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">五月 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a></li></ul>
     </div>
   </div>
 
@@ -287,6 +396,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/05/07/about-emacs/">about_emacs</a>
+          </li>
         
           <li>
             <a href="/2023/04/29/mongodb/">mongodb</a>
