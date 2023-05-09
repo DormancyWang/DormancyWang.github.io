@@ -161,7 +161,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="clhdc7uqb000115fy9tcdd97o" data-title="about_emacs" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="clhgdvv5d0000kyfybwxtd207" data-title="about_emacs" class="article-share-link">分享</a>
       
       
       
@@ -270,7 +270,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="clhdc7uqc000215fygaci8ucy" data-title="mongodb" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="clhgdvv5f0001kyfy0rxe5dme" data-title="mongodb" class="article-share-link">分享</a>
       
       
       
@@ -337,11 +337,48 @@
 <li>applying the * operator to a pointer yields the value stored in the pointed-to object.</li>
 <li>adding 1 to pointer increase its value by the size, in bytes, of the pointed-to type</li>
 </ol>
+<h2 id="VLAs"><a href="#VLAs" class="headerlink" title="VLAs"></a>VLAs</h2><h1 id="Character-Strings-and-String-Functions"><a href="#Character-Strings-and-String-Functions" class="headerlink" title="Character Strings and String Functions"></a>Character Strings and String Functions</h1><ol>
+<li>gets(), gets_s(), fgets(), puts(), fputs(), strcat(), strncat(), strcmp(), strncmp(), strcpy(), strncpy(), sprintf(), strchr()</li>
+<li>reading, writing, copying, comparing, combining, searching.</li>
+</ol>
+<h2 id="Defining-Strings-within-a-program"><a href="#Defining-Strings-within-a-program" class="headerlink" title="Defining Strings within a program"></a>Defining Strings within a program</h2><ol>
+<li>string constants, char array, char pointer</li>
+<li>string constants are placed in the static storage class.</li>
+</ol>
+<h2 id="String-input"><a href="#String-input" class="headerlink" title="String input"></a>String input</h2><ol>
+<li>gets(): not safe, it’s doesn’t check if the input line actually fits into the array.可能会造成buffer overflow, 溢出的数据会覆盖在没有用的memory或者是一些数据</li>
+<li>fgets(): 可以指定读取的长度，添加一个length 的argument就好。它也会将换行符存储到字符串中。</li>
+<li>gets_s(): c11的optional function。如果gets_s()读取到比设定的要长的字符串，也就是没有读取到换行符的时候。 首先，他会把目的字符串的第一个字符设置成null，然后他会读取剩下的字符串，知道遇到换行符或者EOF。接着他返回null pointer, 然后它会调用一个handler 函数来处理这个情况。</li>
+<li>scanf()</li>
+</ol>
+<h2 id="String-output"><a href="#String-output" class="headerlink" title="String output"></a>String output</h2><ol>
+<li>puts()</li>
+<li>fputs()</li>
+<li>printf()</li>
+</ol>
+<h2 id="String-Functions"><a href="#String-Functions" class="headerlink" title="String Functions"></a>String Functions</h2><ol>
+<li>strlen(), strcat(), strncat(), strcmp(), strncmp, strcpy(), strncpy(), sprintf(),</li>
+</ol>
+<h1 id="Storage-Classes-Linkage-and-Memory-Management"><a href="#Storage-Classes-Linkage-and-Memory-Management" class="headerlink" title="Storage Classes, Linkage, and Memory Management"></a>Storage Classes, Linkage, and Memory Management</h1><ol>
+<li>storage classes: models used to storing data in memory.</li>
+<li>key consept</li>
+</ol>
+<ul>
+<li>object: a chunk of memory for storage certain data</li>
+<li>identifier: a way to access the object</li>
+<li>storage duration: how long it stays in memory.</li>
+<li>scope: block, function, function prototype, file scope</li>
+<li>linkage: external, internal</li>
+<li>storage Duration: static, thread, automatic, allocated</li>
+</ul>
+<ol start="2">
+<li>storage classes:<br><img src="/storage_class.png" alt="storage_class"></li>
+</ol>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="clhdc7uq9000015fyc9xmg7ee" data-title="about-c" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="clhgdvv5h0003kyfy8h4i35vs" data-title="about-c" class="article-share-link">分享</a>
       
       
       
