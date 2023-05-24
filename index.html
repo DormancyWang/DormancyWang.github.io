@@ -71,6 +71,49 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-metaprogramming-ruby" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/22/metaprogramming-ruby/" class="article-date">
+  <time class="dt-published" datetime="2023-05-22T05:36:19.000Z" itemprop="datePublished">2023-05-22</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/22/metaprogramming-ruby/">metaprogramming_ruby</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        
+<div class="markmap-container" style="height:height">
+  <svg data="{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:1,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;metaprogramming&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;what is M means?&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[2,3]},&quot;v&quot;:&quot;it&#39;s not use code to generate code, it&#39;s about manipulates itself at runtime.&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[3,4]},&quot;v&quot;:&quot;打开类, open a class&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[4,5]},&quot;v&quot;:&quot;Object#instance_variables&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[5,6]},&quot;v&quot;:&quot;Object#methods&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[6,7]},&quot;v&quot;:&quot;类里有什么&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[7,8]},&quot;v&quot;:&quot;instance variable&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[8,9]},&quot;v&quot;:&quot;methods, methods is in Class.&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[9,10]},&quot;v&quot;:&quot;一个具体的class instance也是一个实例， 他的类是Class&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[10,11]},&quot;v&quot;:&quot;constance&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[11,12]},&quot;v&quot;:&quot;M.constants Module.constants&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[12,13]},&quot;v&quot;:&quot;load() for execute code, require() for import&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[13,14]},&quot;v&quot;:&quot;方法的查找&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[14,15]},&quot;v&quot;:&quot;向右一步再向上&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[15,16]},&quot;v&quot;:&quot;quote:When you include a module in a class (or even in another module),Ruby plays a little trick. It creates an anonymous class that wraps the module and inserts the anonymous class in the chain, just above the including class itself&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[16,17]},&quot;v&quot;:&quot;Kernel is included in Object.&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[17,18]},&quot;v&quot;:&quot;self&quot;},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[18,19]},&quot;v&quot;:&quot;Dynamic methods&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[19,20]},&quot;v&quot;:&quot;Object#send: 调用方法就是给对象发消息, dynamic dispatch 动态派发&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[20,21]},&quot;v&quot;:&quot;method_messing: &lt;code&gt;Ghost methods&lt;/code&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[21,22]},&quot;v&quot;:&quot;Module#define_method 动态定义方法&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[22,23]},&quot;v&quot;:&quot;动态代理： 一个捕获幽灵方法调用并把它们转发给另一个对象 叫做动态代理&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[23,24]},&quot;v&quot;:&quot;const_missing&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[24,25]},&quot;v&quot;:&quot;Blank Slate: BasicObject&quot;}]},{&quot;t&quot;:&quot;heading&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[25,26]},&quot;v&quot;:&quot;块&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[26,27]},&quot;v&quot;:&quot;block_given?&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[27,28]},&quot;v&quot;:&quot;yield&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[28,29]},&quot;v&quot;:&quot;&quot;}]}]}"></svg>
+</div>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://dormancywang.github.io/2023/05/22/metaprogramming-ruby/" data-id="cli1k8cth0001l9fy4d7c46qi" data-title="metaprogramming_ruby" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-about-emacs" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/07/about-emacs/" class="article-date">
@@ -161,7 +204,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="clhgdvv5d0000kyfybwxtd207" data-title="about_emacs" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/05/07/about-emacs/" data-id="cli1k8cti0003l9fy30ik5obz" data-title="about_emacs" class="article-share-link">分享</a>
       
       
       
@@ -270,7 +313,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="clhgdvv5f0001kyfy0rxe5dme" data-title="mongodb" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/mongodb/" data-id="cli1k8cti0002l9fydkzkg8fp" data-title="mongodb" class="article-share-link">分享</a>
       
       
       
@@ -407,7 +450,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="clhgdvv5h0003kyfy8h4i35vs" data-title="about-c" class="article-share-link">分享</a>
+      <a data-url="https://dormancywang.github.io/2023/04/29/about-c/" data-id="cli1k8cte0000l9fy5dz11hry" data-title="about-c" class="article-share-link">分享</a>
       
       
       
@@ -462,6 +505,10 @@
     <h3 class="widget-title">最新文章</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/05/22/metaprogramming-ruby/">metaprogramming_ruby</a>
+          </li>
         
           <li>
             <a href="/2023/05/07/about-emacs/">about_emacs</a>
@@ -522,5 +569,5 @@
 
 
   </div>
-</body>
+<script src="/js/markmap.js"></script></body>
 </html>
